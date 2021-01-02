@@ -1,0 +1,410 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-02T15:16:02.266Z",
+        "line": 14,
+        "name": "Verify if Place is beeng Succesfully added using AddPlace API",
+        "description": "",
+        "id": "validating-plage-i-s;verify-if-place-is-beeng-succesfully-added-using-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1054868690,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload \"Frontline house\" \"French-IN\" \"29, side layout, cohen 09\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"French-IN\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"29, side layout, cohen 09\"",
+                  "offset": 48
+                }
+              ],
+              "location": "MyStepdefs.add_Place_Payload(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1694678788,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyStepdefs.user_calls_something_with_post_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1596614,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "MyStepdefs.the_api_call_is_success_with_status_code_200(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 499576934,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in responce body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "MyStepdefs.in_Responce_Body_Is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9487724,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in responce body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.in_Responce_Body_Is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1966969088,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify place_Id created maps to \"Frontline house\" used in \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 58
+                }
+              ],
+              "location": "MyStepdefs.verifyPlace_IdCreatedMapsToUsedIn(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-02T15:16:07.498Z",
+        "line": 15,
+        "name": "Verify if Place is beeng Succesfully added using AddPlace API",
+        "description": "",
+        "id": "validating-plage-i-s;verify-if-place-is-beeng-succesfully-added-using-addplace-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6585574,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload \"AAhouse\" \"English\" \"World cross center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAhouse\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"World cross center\"",
+                  "offset": 38
+                }
+              ],
+              "location": "MyStepdefs.add_Place_Payload(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 486366374,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "MyStepdefs.user_calls_something_with_post_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 511128,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "MyStepdefs.the_api_call_is_success_with_status_code_200(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28200834,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in responce body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "MyStepdefs.in_Responce_Body_Is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12632920,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in responce body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "MyStepdefs.in_Responce_Body_Is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1883447554,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify place_Id created maps to \"AAhouse\" used in \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAhouse\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 50
+                }
+              ],
+              "location": "MyStepdefs.verifyPlace_IdCreatedMapsToUsedIn(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-02T15:16:09.919Z",
+        "before": [
+          {
+            "result": {
+              "duration": 271372,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify if Delete Place functionality is working",
+        "description": "",
+        "id": "validating-plage-i-s;verify-if-delete-place-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2461636,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "DeletePlace Payload",
+            "match": {
+              "location": "MyStepdefs.deleteplacePayload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2131896614,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User calls \"DeletePlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "MyStepdefs.user_calls_something_with_post_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 770596,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "MyStepdefs.the_api_call_is_success_with_status_code_200(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21051172,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "\"status\" in responce body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "MyStepdefs.in_Responce_Body_Is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Plage I\u0027s",
+    "description": "",
+    "id": "validating-plage-i-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": []
+  }
+]
