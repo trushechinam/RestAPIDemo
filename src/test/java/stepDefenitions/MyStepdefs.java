@@ -50,8 +50,7 @@ public class MyStepdefs  extends Utils {
         System.out.println("My change 1");
         System.out.println("My change 2");
         System.out.println("My change 3");
-        System.out.println("My change 1");
-        System.out.println("My change 2");
+        System.out.println("My change 6");
         System.out.println("My change 3");
 
         System.out.println("Changes in branch");
