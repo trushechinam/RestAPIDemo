@@ -54,6 +54,8 @@ public class MyStepdefs  extends Utils {
         System.out.println("My change 2");
         System.out.println("My change 3");
 
+        System.out.println("Changes in branch");
+
         resspec = new ResponseSpecBuilder().expectStatusCode(200)
                 .expectContentType(ContentType.JSON).build();
 
