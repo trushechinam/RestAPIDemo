@@ -47,6 +47,9 @@ public class MyStepdefs  extends Utils {
 
         APIResources resourceAPI = APIResources.valueOf(resource);
         System.out.println("It is API used: " + resourceAPI.getResource());
+        System.out.println("My change 1");
+        System.out.println("My change 2");
+        System.out.println("My change 3");
 
         resspec = new ResponseSpecBuilder().expectStatusCode(200)
                 .expectContentType(ContentType.JSON).build();
